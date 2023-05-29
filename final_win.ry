@@ -9,17 +9,15 @@ from instr import *
 
 class FinalWin(QWidget):
    def __init__(self, exp):
-       ''' окно, в котором располагается приветствие '''
        super().__init__()
        self.exp = exp
 
        self.initUI()
- 
- 
+       
        self.set_appear()
- 
-          
-   
+       
+       self.show()
+       
    def initUI(self):
 
        self.workh_text = QLabel(txt_workheart + str(self.results()))
